@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image" href="https://www.svgrepo.com/show/303198/youtube-icon-logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <title>YouTube</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logos">
+            <div id="menu-button" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="secondlogo">
+                <img src="images/Logo.svg" alt="logo" class="ytLogo">
+            </div>
+        </div>
+        <div id="inputs">
+            <div id="search-container">
+                <input type="text" placeholder="Search" id="query" onkeypress="searchOnEnter(event)">
+                <i class="fa-solid fa-magnifying-glass" id="search" onclick="search()"></i>
+            </div>
+            <i class="fa-solid fa-microphone" id="mic" onclick="voiceSearch()"></i>
+        </div>
+        <div id="profiles" style="background: none;">
+            <img src="images/create.svg" alt="Create">
+            <img src="images/apps.svg" alt="apps">
+            <img src="images/notifications.svg" alt="notifications">
+            <img src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-855.jpg?w=740&t=st=1698756872~exp=1698757472~hmac=a111bdbb0296311dff8f89c37f685fc696ee48d2c65f5891a2fdcc91b65e5321"
+                alt="profile" style="border-radius: 50%;">
+        </div>
+    </nav>
+    <div id="sidebar">
+        <!-- Sidebar content goes here -->
+        <!-- Close button to hide the sidebar -->
+        
+    </div>
+    <div id="container"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
